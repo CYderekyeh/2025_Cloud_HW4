@@ -6,6 +6,9 @@ This is a demo Node.js application for TSMC container deployment assignment.
 
 ```bash
 docker build -t derekyeh901018/2025cloud:ver1 .
+```
+## 🐳 How to Run Docker Image
 
-## 🐳 How to Build Docker Image
-
+```bash
+docker run derekyeh901018/2025cloud:ver1
+```
