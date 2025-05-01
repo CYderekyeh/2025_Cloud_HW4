@@ -24,3 +24,13 @@ graph TD
   A[推送程式碼至 main 分支] --> B[GitHub Actions 自動觸發]
   B --> C[執行 docker build 建立 Image]
   C --> D[將 Image 推送至 Docker Hub 2025cloud Repo]
+```
+
+### 📌 自動化產生 Tag
+每次程式碼推送至 `main` 分支，GitHub Actions 會自動執行建置流程，並使用該次 commit 的 SHA 值（前 7 碼）產生獨一無二的 tag。
+
+
+```bash
+docker build -t derekyeh901018/2025cloud:ci-${{ github.sha }} .
+```
+範例：derekyeh901018/2025cloud:ci-9adf1c3
