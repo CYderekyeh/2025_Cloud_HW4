@@ -1,0 +1,11 @@
+{
+  "name": "tsmc-cloud-app",
+  "version": "1.0.0",
+  "description": "Demo app for TSMC 2025cloud Docker container",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Derek Yeh",
+  "license": "ISC"
+}
